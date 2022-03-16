@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Navbar } from "./components/Navbar";
+import { Paragraph } from "./components/Paragraph";
+import { Input } from "./components/Input";
+import { Myself } from "./components/Myself";
+import { Counter } from "./components/Counter";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Paragraph />
+      <Input />
+      <Myself name="Seyram Wood Prikah" age="20" gender="male" />
+      <Myself name="Rejoice Makafui Prikah" age="22" gender="female" />
+      <Myself name="Thomas Aftorwu" age="30" gender="male" />
+      <Myself name="Enyonam Agoha" age="25" gender="female" />
+      <Myself name="Bright Agbezuhlor" age="35" gender="male" />
+      <Counter />
     </div>
   );
 }
